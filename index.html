@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Arawal's Path-Visualizer</title>
+    <title>Arawal's Ultimate Pathfinding Visualizer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link id="cssTheme" rel="stylesheet" href="public/styling/cssBasic.css"/>
     <link rel="shortcut icon" type="image/png" href="public/styling/c_icon.png"/>
@@ -10,47 +10,47 @@
      <nav class="navbar navbar-inverse">
        <div class="container-fluid">
          <div class="navbar-header">
-           <a id="refreshButton" class="navbar-brand" href="#">Arawal's Pathfinder</a>
+           <a id="refreshButton" class="navbar-brand" href="#">Arawal's Pathfinder Hub</a>
          </div>
          <ul class="nav navbar-nav">
            <li class="dropdown">
-             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fun Algorithms!
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cool Pathfinding Algorithms!
              <span class="caret"></span></a>
              <ul class="dropdown-menu">
-               <li id='startButtonDijkstra'><a href="#">Dijkstra's Algorithm</a></li>
-               <li id='startButtonAStar2'><a href="#">A* Search</a></li>
-               <li id='startButtonGreedy'><a href="#">Greedy Best-first Search</a></li>
-               <li id='startButtonAStar'><a href="#">Swarm Algorithm</a></li>
-               <li id='startButtonAStar3'><a href="#">Convergent Swarm Algorithm</a></li>
-               <li id='startButtonBidirectional'><a href="#">Bidirectional Swarm Algorithm</a></li>
-               <li id='startButtonBFS'><a href="#">Breadth-first Search</a></li>
-               <li id='startButtonDFS'><a href="#">Depth-first Search</a></li>
+               <li id='startButtonDijkstra'><a href="#">Dijkstra's Path</a></li>
+               <li id='startButtonAStar2'><a href="#">A* Explorer</a></li>
+               <li id='startButtonGreedy'><a href="#">Greedy Best-path Search</a></li>
+               <li id='startButtonAStar'><a href="#">Swarm Intelligence</a></li>
+               <li id='startButtonAStar3'><a href="#">Converging Swarm Tech</a></li>
+               <li id='startButtonBidirectional'><a href="#">Bidirectional Swarm Path</a></li>
+               <li id='startButtonBFS'><a href="#">Breadth-first Explorer</a></li>
+               <li id='startButtonDFS'><a href="#">Depth-first Tracker</a></li>
              </ul>
            </li>
            <li class="dropdown">
-             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mazes &amp; Patterns
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mazes & Patterns by Arawal
              <span class="caret"></span></a>
              <ul class="dropdown-menu">
-               <li id='startButtonCreateMazeTwo'><a href="#">Recursive Division</a></li>
-               <li id='startButtonCreateMazeThree'><a href="#">Recursive Division (vertical skew)</a></li>
-               <li id='startButtonCreateMazeFour'><a href="#">Recursive Division (horizontal skew)</a></li>
-               <li id='startButtonCreateMazeOne'><a href="#">Basic Random Maze</a></li>
-               <li id='startButtonCreateMazeWeights'><a href="#">Basic Weight Maze</a></li>
-               <li id='startStairDemonstration'><a href="#">Simple Stair Pattern</a></li>
+               <li id='startButtonCreateMazeTwo'><a href="#">Recursive Maze (OG)</a></li>
+               <li id='startButtonCreateMazeThree'><a href="#">Recursive Maze (Vertical Shift)</a></li>
+               <li id='startButtonCreateMazeFour'><a href="#">Recursive Maze (Horizontal Shift)</a></li>
+               <li id='startButtonCreateMazeOne'><a href="#">Random Chaos Maze</a></li>
+               <li id='startButtonCreateMazeWeights'><a href="#">Weighted Terrain Maze</a></li>
+               <li id='startStairDemonstration'><a href="#">Stairway Pattern</a></li>
              </ul>
            </li>
            
-           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize!</button></li>
-           <li id='startButtonClearBoard'><a href="#">Clear Board</a></li>
-           <li id='startButtonClearWalls'><a href="#">Clear Walls &amp; Weights</a></li>
-           <li id='startButtonClearPath'><a href="#">Clear Path</a></li>
+           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Run Visualizer!</button></li>
+           <li id='startButtonClearBoard'><a href="#">Reset Board</a></li>
+           <li id='startButtonClearWalls'><a href="#">Remove Walls & Weights</a></li>
+           <li id='startButtonClearPath'><a href="#">Erase Path</a></li>
            <li class="dropdown">
-             <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">Speed: Fast
+             <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">Speed: Turbo Mode
              <span class="caret"></span></a>
              <ul class="dropdown-menu">
-               <li id='adjustFast'><a href="#">Fast</a></li>
-               <li id='adjustAverage'><a href="#">Average</a></li>
-               <li id='adjustSlow'><a href="#">Slow</a></li>
+               <li id='adjustFast'><a href="#">Turbo</a></li>
+               <li id='adjustAverage'><a href="#">Balanced</a></li>
+               <li id='adjustSlow'><a href="#">Chill Mode</a></li>
              </ul>
            </li>
          </ul>
@@ -59,9 +59,9 @@
    </div>
     <div id="tutorial">
       <h3>Welcome to Arawal's Pathfinding Visualizer!</h3>
-      <h4>This is a Project made by me as a part my college Digital Assignment 2!</h4>
-      <h6>This short tutorial will walk you through all of the features of this application.</h6>
-      <p>If you want to dive right in, feel free to press the "Skip Tutorial" button below. Otherwise, press "Next"!</p>
+      <h4>This is my Digital Assignment 2 project at VIT, built from scratch!</h4>
+      <h6>Let me walk you through its features.</h6>
+      <p>Want to get started right away? Click "Skip Tutorial" or press "Next" to continue.</p>
       <div id="tutorialCounter">1/9</div>
       <img id="mainTutorialImage" src="public/styling/c_icon.png">
       <button id="nextButton" class="btn btn-default navbar-btn" type="button">Next</button>
@@ -72,24 +72,24 @@
       <div id='mainText'>
         <ul>
           <li>
-            <div class="start"></div>Start Node</li>
+            <div class="start"></div>Starting Point</li>
           <li>
-            <div class="target"></div>Target Node</li>
+            <div class="target"></div>Destination</li>
           <li id="bombLegend">
-            <div class="object"></div>Bomb Node</li>
+            <div class="object"></div>Obstacle Node</li>
           <li id="weightLegend">
-            <div class="borderlessWeight"></div>Weight Node</li>
+            <div class="borderlessWeight"></div>Weighted Path</li>
           <li>
-            <div class="unvisited"></div>Unvisited Node</li>
+            <div class="unvisited"></div>Untouched Node</li>
           <li>
-            <div class="visited"></div><div class="visitedobject"></div>Visited Nodes</li>
+            <div class="visited"></div><div class="visitedobject"></div>Explored Nodes</li>
           <li>
-            <div class="shortest-path"></div>Shortest-path Node</li>
+            <div class="shortest-path"></div>Optimal Path</li>
           <li>
-            <div class="wall"></div>Wall Node</li>
+            <div class="wall"></div>Barrier Node</li>
         </ul>
       </div>
-      <div id="algorithmDescriptor">Pick an algorithm and visualize it!</div>
+      <div id="algorithmDescriptor">Choose an algorithm and let the magic happen!</div>
       <table id='board'/>
     </div>
   </body>
